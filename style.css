@@ -52,15 +52,36 @@ h1, h2 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #282c34;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #61dafb;
+}
+
 /* Footer Styling */
 footer {
     background-color: #282c34;
     color: #61dafb;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+
+/* Add padding-bottom to body to avoid content overlap with footer */
+body {
+    padding-bottom: 60px;
 }
 
 /* Animations */
