@@ -37,6 +37,7 @@ section {
     padding: 60px 20px;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
+    text-align: center; /* Center align all text within sections */
 }
 
 h1, h2 {
