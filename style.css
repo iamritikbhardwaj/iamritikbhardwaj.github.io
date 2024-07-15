@@ -34,10 +34,10 @@ nav ul li a {
     font-weight: bold;
 }
 section#get-my-resume {
-    padding: 40px 390px;
+    padding: 40px 700px;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
-    text-align: center; /* Center align all text within sections */
+    /* text-align: center; */ /* Center align all text within sections */
     opacity: 0;
     transform: translateY(50px);
     animation: fadeInUp 1s ease forwards;
@@ -75,7 +75,7 @@ section#get-my-resume label {
 
 section#get-my-resume input[type="text"],
 section#get-my-resume input[type="email"] {
-    width: 99%;
+    width: 100%;
     padding: 10px;
     text-align: center;
     margin: 10;
