@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
-    overflow-x: hidden; 
+    overflow-x: hidden; /* hid x*/
     padding-bottom: 0px; /* Add padding-bottom to body to avoid content overlap with footer */
 }
 
