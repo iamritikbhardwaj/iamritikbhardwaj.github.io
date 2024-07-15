@@ -8,6 +8,42 @@ body {
     overflow-x: hidden; /* hid x*/
     padding-bottom: 0px; /* Add padding-bottom to body to avoid content overlap with footer */
 }
+/* Base styles for desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Styles for smartphones */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .header, .footer {
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project img {
+        width: 100%;
+    }
+}
 
 header {
     background-color: #282c34;
