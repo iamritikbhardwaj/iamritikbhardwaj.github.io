@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
-    padding-bottom: 60px; /* Add padding-bottom to body to avoid content overlap with footer */
+    padding-bottom: 0px; /* Add padding-bottom to body to avoid content overlap with footer */
 }
 
 header {
@@ -34,14 +34,13 @@ nav ul li a {
     font-weight: bold;
 }
 section#get-my-resume {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-/*     max-width: 400px; */
-    text-align: center;
-    transition: transform 0.3s;
+    padding: 40px 390px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center; /* Center align all text within sections */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
 }
 
 section#get-my-resume:hover {
@@ -60,6 +59,8 @@ section#get-my-resume p {
     color: #666;
 }
 
+p {}
+
 section#get-my-resume .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -74,9 +75,10 @@ section#get-my-resume label {
 
 section#get-my-resume input[type="text"],
 section#get-my-resume input[type="email"] {
-    width: 100%;
+    width: 99%;
     padding: 10px;
-    margin: 0;
+    text-align: center;
+    margin: 10;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border 0.3s ease;
