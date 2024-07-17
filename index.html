@@ -72,11 +72,17 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="Warning();">Submit</button>
         </form>
     </section>
     <footer>
         <p>Designed and Developed by Ritik Singh</p>
     </footer>
+    <script>
+    function Warning() {
+    	alert("A copy of resume has been sent to your mail. Thank you for your time");
+    	console.log("A copy of resume has been sent to your mail. Thank you for your time");
+    }
+    </script>
 </body>
 </html>
