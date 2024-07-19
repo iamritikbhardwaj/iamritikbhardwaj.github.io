@@ -83,8 +83,8 @@ section#get-my-resume label {
     color: #333;
 }
 
-section#get-my-resume input[type="text"],
-section#get-my-resume input[type="email"] {
+input[type="text"],
+input[type="email"] {
     padding: 10px;
     margin: 10;
     border: 1px solid #ccc;
@@ -92,13 +92,13 @@ section#get-my-resume input[type="email"] {
     transition: border 0.3s ease;
 }
 
-section#get-my-resume input[type="text"]:focus,
-section#get-my-resume input[type="email"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus {
     border-color: #007bff;
     outline: none;
 }
 
-section#get-my-resume button {
+button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -109,11 +109,11 @@ section#get-my-resume button {
     transition: background-color 0.3s ease;
 }
 
-section#get-my-resume button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-section#get-my-resume button:active {
+button:active {
     background-color: #004080;
 }
 
