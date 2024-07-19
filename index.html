@@ -116,8 +116,13 @@ $(document).ready(function() {
     </footer>
     <script>
     function Warning() {
+        if (name != null && email != null) {
     	alert("A copy of resume has been sent to your mail. Thank you for your time");
     	console.log("A copy of resume has been sent to your mail. Thank you for your time");
+        } else {
+            alert("Please fill all the required feilds");
+    	console.log("Please fill all the required feilds");
+        }
     }
     </script>
 </body>
