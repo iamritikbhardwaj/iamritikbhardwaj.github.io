@@ -102,11 +102,11 @@ $(document).ready(function() {
         <form>
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input class="name" type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input class="email" type="email" id="email" name="email" required>
             </div>
             <button type="submit" onclick="Warning();">Submit</button>
         </form>
@@ -116,7 +116,9 @@ $(document).ready(function() {
     </footer>
     <script>
     function Warning() {
-        if (name != null && email != null) {
+        var uname = $('.name');
+    	var uemail = $('.email');
+        if (uname != null && uemail != null) {
     	alert("A copy of resume has been sent to your mail. Thank you for your time");
     	console.log("A copy of resume has been sent to your mail. Thank you for your time");
         } else {
