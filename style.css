@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #d1d1d1;
     color: #333;
     overflow-x: hidden; /* hid x*/
     padding-bottom: 0px; /* Add padding-bottom to body to avoid content overlap with footer */
@@ -272,4 +272,8 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+.project1 img, iframe{
+    width: 672px;
+    height: 370.8px;
 }
