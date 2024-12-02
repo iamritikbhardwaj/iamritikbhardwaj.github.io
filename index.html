@@ -3,9 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ritik's Portfolio</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="author" content="Ritik Singh" />
+    <meta name="publisher" content="Ritik Singh" />
+    <meta
+      name="description"
+      content="Explore the portfolio of Ritik Singh, a skilled Full Stack Developer with expertise in React, Node.js, JavaScript, MongoDB, and more. Check out innovative projects, coding skills, and technology stack."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, React Developer, Node.js, MongoDB, JavaScript, ExpressJS, Web Developer Portfolio, Frontend, Backend Developer"
+    />
+    <link rel="canonical" href="https://www.iamritikbhardwaj.github.io/" />
+    <link
+      rel="icon"
+      style="color: #61dafb"
+      type="image/x-icon"
+      href="public/logo.svg"
+    />
 
+    <meta
+      property="og:title"
+      content="Ritik Singh | Full Stack Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore Ritik Singh's portfolio showcasing full-stack development expertise with React, Node.js, MongoDB, and more."
+    />
+    <meta property="og:url" content="https://www.iamritikbhardwaj.github.io/" />
+    <meta property="og:image" content="URL_to_image_of_your_site_thumbnail" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ritik Singh | Full Stack Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Ritik Singh's portfolio showcasing full-stack development expertise with React, Node.js, MongoDB, and more."
+    />
+    <meta name="twitter:image" content="URL_to_image_of_your_site_thumbnail" />
+
+    <title>
+      Ritik Singh | Full Stack Developer | React, Node.js, JavaScript, MongoDB
+    </title>
+
+    <!-- External Scripts and Stylesheets -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -19,48 +63,15 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body>
-    <script>
-      $(document).ready(function () {
-        var lastScrollTop = 0;
-        var navbar = $(".head");
-
-        $(window).scroll(function (event) {
-          var st = $(this).scrollTop();
-          if (st > lastScrollTop) {
-            // Scroll Down
-            navbar.css("top", "-80px");
-          } else {
-            // Scroll Up
-            navbar.css("top", "0");
-          }
-          lastScrollTop = st;
-        });
-      });
-
-      $(document).ready(function () {
-        var lastScrollTop = 0;
-        var navbar = $(".navbar");
-
-        $(window).scroll(function (event) {
-          var st = $(this).scrollTop();
-          if (st > lastScrollTop) {
-            // Scroll Down
-            navbar.css("top", "-50px");
-          } else {
-            // Scroll Up
-            navbar.css("top", "0");
-          }
-          lastScrollTop = st;
-        });
-      });
-    </script>
+    <!-- Header with Navigation -->
     <header class="head">
-      <nav>
+      <nav aria-label="Main Navigation">
         <div class="navbar">
-            <div class="logo mx-20">
-                <i class="fas fa-code" style="font-size: 2rem; color: #61dafb;"></i>
-            </div>
+          <div class="logo mx-20">
+            <i class="fas fa-code" style="font-size: 2rem; color: #61dafb"></i>
+          </div>
           <ul class="nav-links mx-20">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -70,42 +81,49 @@
         </div>
       </nav>
     </header>
+
+    <!-- Home Section -->
     <section id="home">
-      <h1 class="text-4xl">Ritik Singh</h1>
+      <h1 class="text-4xl">Ritik Singh | Full Stack Developer</h1>
       <p>I speak in <code>&lt;code&gt;</code> so you don't have to.</p>
     </section>
+
+    <!-- About Section -->
     <section id="about">
       <h2 class="text-4xl">About Me</h2>
       <p>
-        I am a Full-Stack Developer based in India, specializing in building
-        exceptional digital experiences. I enjoy using my skill-set to empower
-        people to accomplish their goals.
+        I am a passionate Full-Stack Developer, based in India, creating
+        innovative solutions with technologies like JavaScript, React, Node.js,
+        and more. I enjoy using my skill-set to empower people to accomplish
+        their goals.
       </p>
     </section>
+
+    <!-- Work Section -->
     <section id="work">
       <h2 class="text-4xl">Featured Projects</h2>
       <div class="project flex flex-row justify-center p-2 mx-20">
         <div class="flex flex-col justify-center mx-20">
-          <h3>Scroll Animation</h3>
+          <h3>Project 1: Scroll Animation</h3>
           <p>
             A smooth scrolling animation project with dynamic image transitions.
-          </p>`
+          </p>
         </div>
         <a href="scrollAni.html" title="Click to open scroll animation project">
-        <div class="mx-20">
-                <iframe src="scrollAni.html" title="Scroll Animation Project Preview"></iframe>
-        </div>
+          <div class="mx-20">
+            <iframe
+              src="scrollAni.html"
+              title="Scroll Animation Project Preview"
+            ></iframe>
+          </div>
         </a>
       </div>
       <div class="container">
         <div class="flex justify-center p-2">
-          <img
-          src="https://img.icons8.com/ios-filled/50/000000/sword.png"
-          alt="Weapons Logo"
-        />
-      <h1 class="text-6xl mx-2">
-        My Weapons
-      </h1></div>
+            <img src="https://img.icons8.com/ios-filled/50/000000/sword.png" alt="Icon representing Weapons for development tools" />
+
+          <h3 class="text-6xl mx-2">My Weapons</h3>
+        </div>
         <div class="logos flex flex-row justify-center p-2">
           <img
             src="https://img.icons8.com/color/100/000000/java-coffee-cup-logo.png"
@@ -153,10 +171,12 @@
             alt="Material UI Logo"
             height="100"
           />
-          <img src="https://ollama.com/public/ollama.png" alt="ollama Logo" />
+          <img src="https://ollama.com/public/ollama.png" alt="Ollama Logo" />
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
       <h2 class="text-4xl">Contact</h2>
       <p>Get in touch if you want to work together!</p>
@@ -164,59 +184,55 @@
         <a
           href="https://www.linkedin.com/in/ritik-singh-10b333227"
           target="_blank"
+          title="LinkedIn Profile"
           ><i class="fab fa-linkedin"></i
         ></a>
-        <a href="https://github.com/iamritikbhardwaj" target="_blank"
+        <a
+          href="https://github.com/iamritikbhardwaj"
+          target="_blank"
+          title="GitHub Profile"
           ><i class="fab fa-github"></i
         ></a>
       </div>
     </section>
+
+    <!-- Resume Section -->
     <section>
       <h2 class="text-4xl">Get My Resume</h2>
       <p>Click the download button to get a copy of my resume.</p>
       <div class="flex flex-row justify-center">
-        <iframe src="public/Resume.pdf" width="600" height="400" title="Resume PDF Viewer"></iframe>
-    </div>
+        <iframe
+          src="public/Resume.pdf"
+          width="600"
+          height="400"
+          title="Resume PDF Viewer"
+        ></iframe>
+      </div>
     </section>
+
+    <!-- Footer -->
     <footer>
       <p>Designed and Developed by Ritik Singh</p>
     </footer>
+
+    <!-- External Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        console.log("Doc is ready...");
-        $("#myform").on("submit", function (event) {
-          event.preventDefault();
 
-          var n = $("#name");
-          var e = $("#email");
-
-          if (n != null && e != null) {
-            alert(
-              "A copy of resume has been sent to your email. Thank you for your time."
-            );
-          } else {
-            alert("Please fill the required feilds carefully!");
-          }
-
-          var f = $(this).serialize();
-          console.log(f);
-
-          $.ajax({
-            url: "email",
-            data: f,
-            type: "POST",
-            success: function (data, textStatus, jqXHR) {
-              console.log("sucess...");
-            },
-            error: function (textStatus, jqXHR, errorThrown) {
-              console.log("error...");
-            },
-          });
-        });
-      });
+    <!-- Schema.org JSON-LD (Structured Data) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ritik Singh",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://www.iamritikbhardwaj.github.io",
+        "sameAs": [
+          "https://www.linkedin.com/in/ritik-singh-10b333227",
+          "https://github.com/iamritikbhardwaj"
+        ]
+      }
     </script>
   </body>
 </html>
