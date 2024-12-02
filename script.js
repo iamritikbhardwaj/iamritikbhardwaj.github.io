@@ -43,3 +43,10 @@ tl.from("logo1",{
     duration: 1,
     ease: "none",
 })
+
+tl.from("nav",{
+    x: -30,
+    opacity: 0,
+    duration: 2,
+    ease: none
+})
