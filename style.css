@@ -49,11 +49,11 @@ body {
 }
 
 header {
-    background-color: white;
+    /* background-color: white; */
     height: 100px;
     color: lightslategray;
     padding: 10px 0;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 1000;
 }
@@ -215,7 +215,7 @@ h1, h2 {
     border-radius: 10px;
 }
 
-.logo-container img {
+.logo-container img, #weapons i {
     max-width: 100px;
     height: auto;
     margin: 10px;
@@ -225,7 +225,7 @@ h1, h2 {
 
 /* Footer Styling */
 footer {
-    background-color: #282c34;
+    /* background-color: #282c34; */
     color: #61dafb;
     text-align: center;
     padding: 20px 0;
